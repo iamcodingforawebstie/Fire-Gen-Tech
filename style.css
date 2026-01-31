@@ -1,0 +1,212 @@
+/*Controls the gradient of the background */
+body {
+  background-color: white;
+  color: #ffffff;
+  background: linear-gradient(-45deg, rgb(32, 3, 183), #0c24ef, #2800f5, #5000ff);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+text-align:center;
+font-family: sans-serif;
+}
+h2{
+    color:white;
+}
+ /*navbar*/
+          .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: rgba(0, 204, 244, 0.46);
+            border-radius: 26px;
+            padding: 10px 0;
+            margin: 10px auto;
+            max-width: 1200px;
+            box-shadow: 0 4px 10px rgba(23, 19, 19, 0.1);
+        }
+
+        .navbar a {
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            padding: 12px 20px;
+            text-decoration: none;
+            margin: 0 5px;
+            border-radius: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .navbar a:hover,
+        .navbar a.active {
+            background-color: #005bb5;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        }
+
+
+@keyframes gradientBG {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+/*This code is for the boxes*/
+.boxes {
+            background-color: darkblue;
+            border: 2px solid darkblue;
+            padding: 20px;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 20px;
+            text-align: center;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .boxes h3 {
+            color: skyblue;
+            margin-top: 0;
+        }
+
+        .boxes p {
+            margin-bottom: 0;
+        }
+/* Footer */
+        footer {
+            text-align: center;
+            margin: 40px auto;
+            padding: 20px;
+             bottom: 0;
+            left:0;
+            color: white;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            max-width: 1200px;
+            box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+            transition: all 0.3s ease;
+        }
+
+        footer a {
+            color: #00d4ff;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: all 0.3s;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+/* This is for the form */
+    form {
+        background: #fff;
+        padding: 20px 25px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        width: 100%;
+        max-width: 400px;
+    }
+    h2 {
+        text-align: center;
+        margin-bottom: 20px;
+        color: #333;
+    }
+    label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+        color: #555;
+    }
+    input, textarea, select, button {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 14px;
+        box-sizing: border-box;
+    }
+    input:focus, textarea:focus, select:focus {
+        border-color: #007BFF;
+        outline: none;
+        box-shadow: 0 0 5px rgba(0,123,255,0.3);
+    }
+    button {
+        background: #007BFF;
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin-top: 15px;
+        font-size: 16px;
+    }
+    button:hover {
+        background: #0056b3;
+    }
+    .note {
+        font-size: 12px;
+        color: #777;
+    }
+/*Image size*/
+img{
+    max-width: 50%
+}
+/* Responsive Design */
+        @media screen and (max-width: 600px) {
+            .navbar {
+                flex-wrap: wrap;
+                padding: 10px;
+            }
+
+            .navbar a {
+                margin: 5px 0;
+                width: 100%;
+            }
+
+            img {
+                max-width: 90%;
+            }
+
+            .boxes {
+                padding: 15px;
+            }
+        }
+/* This is the popup thing that happens after you finish a processes*/
+#snackbar {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#snackbar.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+/* This controls the animations of the background*/
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+
+
+

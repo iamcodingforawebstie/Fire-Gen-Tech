@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image" href="faviconreal.png">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            /* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 49%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+            /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+            button{
+                background-color:gray;
+            }
+        </style>
+        <title>Our Products - Fire Gen Tech</title>
+    </head>
+    <body>
+        <!--Navbar-->
+        <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="ourpurpose.html">Our Purpose</a>
+        <a href="Healthcare.html">Health care</a>
+        <a class="active" href="#">Our Products</a>
+        </nav>
+        <main>
+            <!--This is like a banner-->
+            <div class="boxes">Due to the high popularity of our products, we are currently experiencing a shortage of
+            products. We apoligize for the inconvenience!</div>
+            <!--Rest is the products-->
+            <h3>Consumer devices:</h3>
+            <div class="row">
+  <div class="column">
+    <div class="boxes">
+            <h3>Fire Gen Ultrabook 3</h3><hr>
+            <p>This is our current leading device, which has all the power you need! It contains a processor called the Fire Level 10
+        with an OS called FireOS. It might not look like it could do much, but this is a powerful device, even beating the M2 Chip in comparison.
+        <br><br> Price: $2,300</p>
+        <button>Sold out</button>
+        </div>
+  </div>
+  <div class="column">
+    <div class="boxes" >
+            <h3>Fire Lightbook 9</h3><hr>
+            <p>This is the base model of our laptops. Althougth it has the Fire Level 1 Chip, it still has strong performance
+        that even normal mordern laptops can't match up to. <br> <br>Price: $300</p> <button>Sold out</button>
+        </div>
+  </div>
+</div>
+            <div class="row">
+  <div class="column">
+    <div class="boxes">
+            <h3>Firebook Powerbook 2</h3><hr>
+            <p>This is our most powerful laptop yet. It contains the Fire Level 15 Chip, the most powerfull chip we sell. This chip
+                has one breakthrough, it does this all without a cooling fan. This was made popular thanks to cutting edge technology.
+        <br><br> Price: $10,000</p>
+        <button>Comming soon...</button>
+        </div>
+  </div>
+  <div class="column">
+    <div class="boxes" >
+            <h3>Firebook mini </h3><hr>
+            <p>A smaller laptop, with similar performance! This laptop still has the same power of the Next Gen UltraBook 3, but
+                in a smaller design!<br> <br>Price: $5,000</p> <button>Sold out</button>
+        </div>
+  </div>
+</div>
+        <h3>Products for medical centers</h3>
+            <div class="row">
+  <div class="column">
+    <div class="boxes">
+            <h3>MRI AI Machine</h3><hr>
+            <p>We have taken a look at regular MRI machines, and we thought about the problems with this machine, and solutions.
+                Then we wondered, <i>is it possible to make MRI machines that use AI for a more acurate result?</i> Well,
+                we got an MRI machine and we started intergrating AI into the hardware of the macine and what is the result?
+                A much more acurate MRI machine!
+        <br><br> Price: $100,000<small>*</small></p>
+        <button>Sold out (Will be restocked in a week)</button>
+        </div>
+  </div>
+  <div class="column">
+    <div class="boxes" >
+            <h3>AI X-Ray Scanning</h3><hr>
+            <p>This machine replaces old X-ray Scanning. With this new machine, all scanned images will be sent to AI, which will
+                enchance the scanned image so doctors can better examine the bone to help detect unnoticed fractures before its too late.<br> <br>Price: $10,000*</p> <button>Sold out</button>
+        </div>
+  </div>
+</div>
+            <h3>More products comming soon...</h3>
+        </main>
+        <br>
+       <footer>
+        <small><a href="contactus.html">Contact Us</a></small>
+        <small><a href="privacypolicy.html">Privacy Policy</a></small>
+        <small><a href="deletecollecteddata.html">Delete Collected Data About Me</a></small>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>

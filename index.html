@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image" href="faviconreal.png">
+        <link rel="stylesheet" href="style.css">
+        
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <title>Fire Gen Tech</title>
+    </head>
+    <body>
+        <!--Navbar-->
+        <nav class="navbar">
+        <a class="active" href="#">Home</a>
+        <a href="ourpurpose.html">Our Purpose</a>
+        <a href="Healthcare.html">Health care</a>
+        <a href="products.html">Our Products</a>
+        </nav>
+
+        
+        <br>
+        <main>
+            <!--Main part-->
+        <h2 style="color:white;">Welcome to Fire Generation Technologies home page!</h2>
+        <div class="boxes">
+            <h3>Our mission</h3><hr>
+            <p>Support and inovate tech into medical use, and provide tech to consumers.</p>
+        </div>
+        <div class="boxes">
+            <h3>Signup</h3><hr>
+            <p>Sign up to recieve daily information about our services, what we're doing, etc.</p>
+            <p><button id="show">Signup</button>
+
+            <p id="info"></p>
+<!-- This is the newsletter form-->
+<dialog id="dlog">
+<h2>Sign up for our newsletter</h2>
+<form id="newsletterForm">
+    <!-- Add an ID for easy selection in JS -->
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" placeholder="John Doe" minlength="3" required>
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" placeholder="+1 555-123-4567" pattern="^\+?[0-9\s\-]{7,15}$" required>
+    <p class="note">* All fields marked as required must be filled.</p>
+    <button id="cncl" type="button">Cancel</button> <!-- Type button prevents it from submitting the form -->
+    <button id="conf" type="submit">Submit</button>
+</form>
+
+
+                </dialog>
+            <div id="snackbar">Thank you for signing up!</div>
+        </div>
+            </main>
+        <img src="faviconreal.png" alt="Fire generation logo">
+        <script src="script.js"></script>
+        <!-- Footer-->
+        <footer>
+        <small><a href="contactus.html">Contact Us</a></small>
+        <small><a href="privacypolicy.html">Privacy Policy</a></small>
+        <small><a href="deletecollecteddata.html">Delete Collected Data About Me</a></small>
+        </footer>
+    </body>
+</html>

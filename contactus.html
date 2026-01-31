@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, initial-scale=1">
+        <link rel="icon" type="image" href="faviconreal.png">
+        <link rel="stylesheet" href="style.css">
+        <title>Contact Us - Fire Gen Tech</title>
+    </head>
+    <body>
+        <!--Navbar-->
+        <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="ourpurpose.html">Our Purpose</a>
+        <a href="Healthcare.html">Health care</a>
+        <a href="products.html">Our Products</a>
+        </nav>
+        <main>
+            <div class="boxes">
+                <h3>Contact Us!</h3><hr>
+            <p>Send us an email at mail@firegentech.org</p>
+                <br>
+            <p>Or call us at +1 800-gen-tech</p>
+                <br>
+                 <p><button id="show">Or click me</button>
+
+                <p id="info"></p>
+
+<dialog id="dlog">
+    <form id="newsletterForm">
+    <h2>Contact Us</h2>
+
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" placeholder="John Doe" minlength="3" required>
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" name="phone" placeholder="+1 555-123-4567" pattern="^\+?[0-9\s\-]{7,15}$" required>
+
+    <label for="subject">Choose one:</label>
+    <select id="subject" name="subject" required>
+        <option value="">-- Select a topic --</option>
+        <option value="Jobs">Jobs</option>
+        <option value="feedback">Feedback</option>
+        <option value="Other">Other</option>
+    </select>
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" rows="4" placeholder="Write your message here..." required></textarea>
+
+    <p class="note">* All fields marked as required must be filled.</p>
+    
+    <button id="cncl">Cancel</button>
+    <button id="conf" onclick="infosent()">Submit</button>
+    </form>
+                
+
+                </dialog> 
+        </div>
+            <div id="snackbar">We will get to you as soon as possible.</div>
+            <p></p>
+            
+        </main>
+        <br>
+        <footer>
+        <small><a class="active" href="#">Contact Us</a></small>
+        <small><a href="privacypolicy.html">Privacy Policy</a></small>
+        <small><a href="deletecollecteddata.html">Delete Collected Data About Me</a></small>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
